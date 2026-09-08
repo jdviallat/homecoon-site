@@ -3,7 +3,7 @@
 var DICT = {
 
 fr: {
-  "hero.chemin":"📍 Garage <span class="sep">›</span> Zone B <span class="sep">›</span> Étagère 2 <span class="sep">›</span> Bac B4 <span class="sep">›</span> Boîte « Fixations »",
+  "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Étagère 2 <span class='sep'>›</span> Bac B4 <span class='sep'>›</span> Boîte « Fixations »",
   "meta.title":"Homecoon — Tout retrouver chez soi",
   "meta.desc":"Homecoon, par Bengacoon : répertoriez ce qui dort dans le garage, la cave et les placards, et retrouvez n'importe quoi avec son chemin exact. Tout reste sur votre téléphone.",
   "marque.sig":"par Bengacoon",
@@ -66,7 +66,7 @@ fr: {
 },
 
 en: {
-  "hero.chemin":"📍 Garage <span class="sep">›</span> Zone B <span class="sep">›</span> Shelf 2 <span class="sep">›</span> Bin B4 <span class="sep">›</span> “Fixings” box",
+  "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Shelf 2 <span class='sep'>›</span> Bin B4 <span class='sep'>›</span> “Fixings” box",
   "meta.title":"Homecoon — Find everything at home",
   "meta.desc":"Homecoon, by Bengacoon: list what sleeps in the garage, the cellar and the cupboards, then find anything with its exact path. Everything stays on your phone.",
   "marque.sig":"by Bengacoon",
@@ -129,7 +129,7 @@ en: {
 },
 
 de: {
-  "hero.chemin":"📍 Garage <span class="sep">›</span> Zone B <span class="sep">›</span> Regal 2 <span class="sep">›</span> Kiste B4 <span class="sep">›</span> Kiste „Befestigungen“",
+  "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Regal 2 <span class='sep'>›</span> Kiste B4 <span class='sep'>›</span> Kiste „Befestigungen“",
   "meta.title":"Homecoon — Zu Hause alles wiederfinden",
   "meta.desc":"Homecoon von Bengacoon: Erfassen Sie, was in Garage, Keller und Schränken schlummert, und finden Sie alles über seinen genauen Pfad wieder. Alles bleibt auf Ihrem Telefon.",
   "marque.sig":"von Bengacoon",
@@ -192,7 +192,7 @@ de: {
 },
 
 it: {
-  "hero.chemin":"📍 Garage <span class="sep">›</span> Zona B <span class="sep">›</span> Scaffale 2 <span class="sep">›</span> Contenitore B4 <span class="sep">›</span> Scatola « Fissaggi »",
+  "hero.chemin":"📍 Garage <span class='sep'>›</span> Zona B <span class='sep'>›</span> Scaffale 2 <span class='sep'>›</span> Contenitore B4 <span class='sep'>›</span> Scatola « Fissaggi »",
   "meta.title":"Homecoon — Ritrova tutto in casa",
   "meta.desc":"Homecoon, di Bengacoon: cataloga ciò che dorme in garage, in cantina e negli armadi, e ritrova qualsiasi cosa con il suo percorso esatto. Tutto resta sul tuo telefono.",
   "marque.sig":"di Bengacoon",
@@ -255,7 +255,7 @@ it: {
 },
 
 pt: {
-  "hero.chemin":"📍 Garagem <span class="sep">›</span> Zona B <span class="sep">›</span> Prateleira 2 <span class="sep">›</span> Caixote B4 <span class="sep">›</span> Caixa «Fixações»",
+  "hero.chemin":"📍 Garagem <span class='sep'>›</span> Zona B <span class='sep'>›</span> Prateleira 2 <span class='sep'>›</span> Caixote B4 <span class='sep'>›</span> Caixa «Fixações»",
   "meta.title":"Homecoon — Encontre tudo em casa",
   "meta.desc":"Homecoon, por Bengacoon: catalogue o que dorme na garagem, na cave e nos armários, e encontre qualquer coisa com o seu caminho exato. Tudo fica no seu telemóvel.",
   "marque.sig":"por Bengacoon",
@@ -318,7 +318,7 @@ pt: {
 },
 
 es: {
-  "hero.chemin":"📍 Garaje <span class="sep">›</span> Zona B <span class="sep">›</span> Estante 2 <span class="sep">›</span> Caja B4 <span class="sep">›</span> Caja «Fijaciones»",
+  "hero.chemin":"📍 Garaje <span class='sep'>›</span> Zona B <span class='sep'>›</span> Estante 2 <span class='sep'>›</span> Caja B4 <span class='sep'>›</span> Caja «Fijaciones»",
   "meta.title":"Homecoon — Encuentra todo en casa",
   "meta.desc":"Homecoon, de Bengacoon: cataloga lo que duerme en el garaje, la bodega y los armarios, y encuentra cualquier cosa con su ruta exacta. Todo se queda en tu teléfono.",
   "marque.sig":"de Bengacoon",
@@ -381,7 +381,7 @@ es: {
 },
 
 sv: {
-  "hero.chemin":"📍 Garage <span class="sep">›</span> Zon B <span class="sep">›</span> Hylla 2 <span class="sep">›</span> Låda B4 <span class="sep">›</span> Ask ”Infästning”",
+  "hero.chemin":"📍 Garage <span class='sep'>›</span> Zon B <span class='sep'>›</span> Hylla 2 <span class='sep'>›</span> Låda B4 <span class='sep'>›</span> Ask ”Infästning”",
   "meta.title":"Homecoon — Hitta allt hemma",
   "meta.desc":"Homecoon från Bengacoon: registrera det som sover i garaget, källaren och skåpen, och hitta vad som helst med dess exakta sökväg. Allt stannar i telefonen.",
   "marque.sig":"av Bengacoon",
@@ -444,7 +444,7 @@ sv: {
 },
 
 no: {
-  "hero.chemin":"📍 Garasje <span class="sep">›</span> Sone B <span class="sep">›</span> Hylle 2 <span class="sep">›</span> Kasse B4 <span class="sep">›</span> Eske «Festemidler»",
+  "hero.chemin":"📍 Garasje <span class='sep'>›</span> Sone B <span class='sep'>›</span> Hylle 2 <span class='sep'>›</span> Kasse B4 <span class='sep'>›</span> Eske «Festemidler»",
   "meta.title":"Homecoon — Finn alt hjemme",
   "meta.desc":"Homecoon fra Bengacoon: registrer det som sover i garasjen, kjelleren og skapene, og finn hva som helst med nøyaktig sti. Alt blir liggende på telefonen.",
   "marque.sig":"av Bengacoon",
@@ -507,7 +507,7 @@ no: {
 },
 
 fi: {
-  "hero.chemin":"📍 Autotalli <span class="sep">›</span> Alue B <span class="sep">›</span> Hylly 2 <span class="sep">›</span> Laatikko B4 <span class="sep">›</span> Rasia ”Kiinnikkeet”",
+  "hero.chemin":"📍 Autotalli <span class='sep'>›</span> Alue B <span class='sep'>›</span> Hylly 2 <span class='sep'>›</span> Laatikko B4 <span class='sep'>›</span> Rasia ”Kiinnikkeet”",
   "meta.title":"Homecoon — Löydä kaikki kotoa",
   "meta.desc":"Homecoon, tekijänä Bengacoon: luetteloi se, mikä nukkuu autotallissa, kellarissa ja kaapeissa, ja löydä mikä tahansa tarkan polun avulla. Kaikki pysyy puhelimessasi.",
   "marque.sig":"tekijä Bengacoon",
