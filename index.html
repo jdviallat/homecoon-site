@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">Homecoon — Tout retrouver chez soi</title>
+<meta name="description" content="Homecoon, par Bengacoon : répertoriez ce qui dort dans le garage, la cave et les placards, et retrouvez n'importe quoi avec son chemin exact. Tout reste sur votre téléphone." data-i18n="meta.desc" data-i18n-attr="content">
+<link rel="icon" href="assets/favicon.png">
+<meta property="og:title" content="Homecoon — Tout retrouver chez soi">
+<meta property="og:description" content="Où sont mes chevilles M10 ? Garage › Zone B › Étagère 2 › Bac B4. Inventaire de la maison, 100 % sur votre téléphone.">
+<meta property="og:image" content="assets/icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --papier:#FAF8F5; --carte:#FFFFFF; --carte-2:#F1EFEA; --bord:#E2DBD1;
+    --encre:#1C1917; --muted:#6B635B;
+    --ambre:#B45309; --ambre-clair:#FDF0DF; --pin:#2F3A34; --ok:#15803D; --alerte:#B91C1C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--encre);background:var(--papier);line-height:1.62;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;font-weight:700;letter-spacing:-.02em;text-wrap:balance}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+
+  header{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--bord)}
+  header .wrap{display:flex;align-items:center;gap:12px;height:64px}
+  header img{width:36px;height:36px;border-radius:10px}
+  header .brand{font-weight:700;font-size:19px;font-family:Archivo,Arial,sans-serif}
+  header .brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.3px}
+  header nav{margin-left:auto;display:flex;gap:22px;font-size:14px;font-weight:600;align-items:center}
+  header nav a{color:var(--muted);text-decoration:none}
+  header nav a:hover{color:var(--ambre)}
+  select{background:var(--carte);color:var(--encre);border:1px solid var(--bord);border-radius:8px;
+         padding:7px 9px;font-size:13px;font-family:inherit}
+  @media(max-width:760px){header nav a{display:none}}
+
+  .hero{padding:72px 0 56px;border-bottom:1px solid var(--bord)}
+  .hero h1{font-size:clamp(34px,6vw,60px);line-height:1.03}
+  .hero h1 em{font-style:normal;color:var(--ambre)}
+  .hero p.lede{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin-top:18px;max-width:56ch}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .btn{display:inline-block;padding:13px 22px;border-radius:12px;font-weight:700;text-decoration:none;font-size:15px}
+  .btn.p{background:var(--ambre);color:#fff}
+  .btn.s{background:var(--ambre-clair);color:var(--ambre)}
+  .btn.g{border:1px solid var(--bord);background:var(--carte);color:var(--encre)}
+
+  /* La réponse type : c'est tout le produit en trois lignes. */
+  .demande{margin-top:34px;background:var(--carte);border:1px solid var(--bord);border-radius:16px;overflow:hidden}
+  .demande .q{padding:16px 20px;border-bottom:1px solid var(--bord);font-weight:600}
+  .demande .r{padding:18px 20px;display:grid;gap:8px}
+  .chemin{font-family:"IBM Plex Mono",monospace;font-size:15px;overflow-x:auto;white-space:nowrap}
+  .chemin .sep{color:var(--ambre);padding:0 6px}
+  .meta{color:var(--muted);font-size:14px}
+
+  section{padding:60px 0;border-bottom:1px solid var(--bord)}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ambre)}
+  section h2{font-size:clamp(24px,3.6vw,34px);margin-top:8px}
+  section p.sub{color:var(--muted);margin-top:10px;max-width:64ch}
+
+  .grid{display:grid;gap:1px;background:var(--bord);border:1px solid var(--bord);border-radius:16px;overflow:hidden;margin-top:28px}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .cell{background:var(--carte);padding:22px}
+  .cell h3{font-size:17px}
+  .cell p{color:var(--muted);font-size:14.5px;margin-top:8px}
+  .cell .ic{font-size:24px;display:block;margin-bottom:10px}
+
+  ol.etapes{list-style:none;counter-reset:e;margin-top:28px;display:grid;gap:1px;background:var(--bord);
+            border:1px solid var(--bord);border-radius:16px;overflow:hidden}
+  ol.etapes li{counter-increment:e;background:var(--carte);padding:20px 22px;display:grid;
+               grid-template-columns:38px 1fr;gap:16px;align-items:start}
+  ol.etapes li::before{content:counter(e);font-family:"IBM Plex Mono",monospace;color:var(--ambre);
+                       font-size:13px;padding-top:3px}
+  ol.etapes h3{font-size:16.5px}
+  ol.etapes p{color:var(--muted);font-size:14.5px;margin-top:6px}
+
+  .prix{display:grid;gap:1px;background:var(--bord);border:1px solid var(--bord);border-radius:16px;
+        overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:28px}
+  .prix > div{background:var(--carte);padding:26px}
+  .prix .haut{background:var(--ambre-clair)}
+  .prix .tarif{font-family:Archivo,Arial,sans-serif;font-size:34px;font-weight:700;margin:6px 0 4px}
+  .prix ul{list-style:none;margin-top:14px;display:grid;gap:9px}
+  .prix li{font-size:15px;display:grid;grid-template-columns:20px 1fr;gap:8px}
+  .prix li b{color:var(--ok)}
+  .prix small{color:var(--muted)}
+
+  table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:24px}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--bord);vertical-align:top}
+  th{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+     color:var(--muted);font-weight:400}
+  .fait{color:var(--ok);font-weight:700}
+  .attente{color:var(--muted)}
+
+  footer{padding:52px 0 64px;text-align:center}
+  footer .emb{width:64px;height:64px;border-radius:32px;margin:0 auto 12px;display:block}
+  footer .nom{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.42em;color:var(--ambre);font-weight:500}
+  footer .sig{color:var(--muted);font-size:13px;margin-top:6px}
+  footer nav{margin-top:18px;display:flex;gap:18px;justify-content:center;font-size:14px}
+  footer nav a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <img src="assets/icon.png" alt="Homecoon">
+  <div class="brand">Homecoon<small data-i18n="marque.sig">par Bengacoon</small></div>
+  <nav>
+    <a href="#comment" data-i18n="nav.comment">Comment ça marche</a>
+    <a href="#couvre" data-i18n="nav.couvre">Ce que ça gère</a>
+    <a href="#donnees" data-i18n="nav.donnees">Vos données</a>
+    <a href="#prix" data-i18n="nav.prix">Prix</a>
+    <select id="langue" aria-label="Langue"></select>
+  </nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <h1 data-i18n="hero.h1">Tout retrouver <em>chez soi</em>.</h1>
+  <p class="lede" data-i18n="hero.lede">Répertoriez ce qui dort dans le garage, la cave, les placards et les cartons. Puis retrouvez n'importe quoi avec son chemin exact, en deux gestes, sans réseau.</p>
+
+  <div class="demande">
+    <div class="q" data-i18n="hero.q">« Où sont mes chevilles M10 ? »</div>
+    <div class="r">
+      <div class="chemin">📍 Garage <span class="sep">›</span> Zone B <span class="sep">›</span> Étagère 2 <span class="sep">›</span> Bac B4 <span class="sep">›</span> <span data-i18n="hero.boite">Boîte « Fixations »</span></div>
+      <div class="meta" data-i18n="hero.meta">🔢 18 restantes · 🏷️ cheville métallique M10 · 📅 ajoutée le 12/08/2026</div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a class="btn p" href="#prix" data-i18n="hero.cta1">Voir le prix</a>
+    <a class="btn s" href="#jalons" data-i18n="hero.cta2">Où en est le développement</a>
+  </div>
+</div></div>
+
+<section id="comment"><div class="wrap">
+  <div class="eyebrow" data-i18n="comment.eyebrow">Comment ça marche</div>
+  <h2 data-i18n="comment.h2">Quatre gestes, une fois. Puis deux, à chaque fois.</h2>
+  <p class="sub" data-i18n="comment.sub">Le vrai obstacle d'un inventaire de maison, ce n'est pas la technique : c'est la saisie. Tout est fait pour qu'elle reste supportable.</p>
+  <ol class="etapes">
+    <li><div>
+      <h3 data-i18n="etape1.h3">Dessinez vos rangements</h3>
+      <p data-i18n="etape1.p">Le garage, la cave, la cuisine… puis leurs étagères et leurs bacs, aussi loin que vous rangez. « Bac A1 » à « Bac A6 » se créent d'un seul geste.</p>
+    </div></li>
+    <li><div>
+      <h3 data-i18n="etape2.h3">Collez un QR sur chaque bac</h3>
+      <p data-i18n="etape2.p">L'application imprime une planche de vingt-quatre étiquettes. Le QR contient l'identifiant du bac, jamais son chemin : renommez-le ou déplacez-le, l'étiquette reste valable.</p>
+    </div></li>
+    <li><div>
+      <h3 data-i18n="etape3.h3">Videz le carton devant vous</h3>
+      <p data-i18n="etape3.p">Scannez le QR du bac, puis enchaînez les objets sans quitter l'écran. Un objet minimal, c'est un nom : le reste est facultatif.</p>
+    </div></li>
+    <li><div>
+      <h3 data-i18n="etape4.h3">Demandez</h3>
+      <p data-i18n="etape4.p">« chevilles », « ce qui périme », « dans le garage ». La réponse arrive avec le chemin complet — et l'application répond même en mode avion.</p>
+    </div></li>
+  </ol>
+</div></section>
+
+<section id="couvre"><div class="wrap">
+  <div class="eyebrow" data-i18n="couvre.eyebrow">Ce que ça gère</div>
+  <h2 data-i18n="couvre.h2">Une boîte de vis et une bouteille de Bourgogne n'ont pas la même fiche</h2>
+  <p class="sub" data-i18n="couvre.sub">Vingt-trois catégories, dont quatre ont leur propre écran parce qu'elles posent des questions différentes.</p>
+  <div class="grid g2">
+    <div class="cell"><span class="ic">🔧</span>
+      <h3 data-i18n="c1.h3">Outillage, visserie, pièces auto</h3>
+      <p data-i18n="c1.p">Quantités, seuils d'alerte, références, numéros de série. Retirez dix vis d'un appui long.</p></div>
+    <div class="cell"><span class="ic">🍷</span>
+      <h3 data-i18n="c2.h3">Cave à vin</h3>
+      <p data-i18n="c2.p">Domaine, appellation, millésime, position dans le rack, fenêtre de dégustation. « Quels vins dois-je boire cette année ? » devient une question qui a une réponse.</p></div>
+    <div class="cell"><span class="ic">🥫</span>
+      <h3 data-i18n="c3.h3">Garde-manger</h3>
+      <p data-i18n="c3.p">Trois boîtes en mars et cinq en août, c'est le même produit avec deux dates : chaque lot a sa DLC, et on entame toujours la plus proche.</p></div>
+    <div class="cell"><span class="ic">🐾</span>
+      <h3 data-i18n="c4.h3">Animaux</h3>
+      <p data-i18n="c4.p">Croquettes, litière, soins, équipement — pour le chien, le chat, les poissons, le cheval… Avec la ration quotidienne : « il reste environ 12 jours de croquettes pour Rex ».</p></div>
+  </div>
+</div></section>
+
+<section id="donnees"><div class="wrap">
+  <div class="eyebrow" data-i18n="donnees.eyebrow">Vos données</div>
+  <h2 data-i18n="donnees.h2">Votre inventaire ne quitte pas votre téléphone</h2>
+  <p class="sub" data-i18n="donnees.sub">Pas de compte à créer, pas de serveur, pas d'abonnement. C'est aussi la seule façon d'obtenir une réponse dans une cave sans réseau.</p>
+  <div class="grid g3">
+    <div class="cell"><span class="ic">📴</span><h3 data-i18n="d1.h3">Hors ligne, par construction</h3>
+      <p data-i18n="d1.p">Tout est enregistré sur l'appareil. L'application répond en mode avion, au fond du garage.</p></div>
+    <div class="cell"><span class="ic">🔐</span><h3 data-i18n="d2.h3">Sauvegarde chiffrée</h3>
+      <p data-i18n="d2.p">Toutes vos données et vos photos dans un fichier, protégé par une phrase de passe que vous seul connaissez.</p></div>
+    <div class="cell"><span class="ic">📊</span><h3 data-i18n="d3.h3">Vos données restent lisibles</h3>
+      <p data-i18n="d3.p">Export en classeur Excel — et le même fichier se réimporte. Corrigez trois cents lignes sur un ordinateur, réimportez, rien n'est perdu.</p></div>
+  </div>
+</div></section>
+
+<section id="prix"><div class="wrap">
+  <div class="eyebrow" data-i18n="prix.eyebrow">Prix</div>
+  <h2 data-i18n="prix.h2">Gratuit pour essayer, un seul achat ensuite</h2>
+  <p class="sub" data-i18n="prix.sub">Un achat unique, à vie. Pas d'abonnement, comme les autres applications de la gamme.</p>
+  <div class="prix">
+    <div>
+      <h3 data-i18n="prix.g.h3">Gratuit</h3>
+      <div class="tarif" data-i18n="prix.g.tarif">0 €</div>
+      <small data-i18n="prix.g.sub">Pour équiper un garage entier et voir si l'outil vous convient.</small>
+      <ul>
+        <li><b>✓</b><span data-i18n="prix.g.l1">50 objets et lieux enregistrés</span></li>
+        <li><b>✓</b><span data-i18n="prix.g.l2">Lieux, photos, recherche, QR, scanner</span></li>
+        <li><b>✓</b><span data-i18n="prix.g.l3">Sauvegarde non chiffrée</span></li>
+      </ul>
+    </div>
+    <div class="haut">
+      <h3 data-i18n="prix.p.h3">Homecoon complet</h3>
+      <div class="tarif">7,90 €</div>
+      <small data-i18n="prix.p.sub">Un seul paiement, à vie.</small>
+      <ul>
+        <li><b>✓</b><span data-i18n="prix.p.l1">Objets et lieux illimités</span></li>
+        <li><b>✓</b><span data-i18n="prix.p.l2">Sauvegarde chiffrée</span></li>
+        <li><b>✓</b><span data-i18n="prix.p.l3">Exports Excel, CSV, JSON et PDF</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="sub" style="margin-top:18px" data-i18n="prix.note">Atteindre la limite ne détruit ni ne cache jamais rien : l'ajout est bloqué, tout ce qui est déjà enregistré reste consultable et exportable.</p>
+</div></section>
+
+<section id="jalons"><div class="wrap">
+  <div class="eyebrow" data-i18n="jalons.eyebrow">Transparence</div>
+  <h2 data-i18n="jalons.h2">Où en est le développement</h2>
+  <p class="sub" data-i18n="jalons.sub">L'application n'est pas encore publiée sur les stores. Voici ce qui fonctionne aujourd'hui, vérifié sur un téléphone.</p>
+  <table>
+    <thead><tr>
+      <th data-i18n="jalons.th1">Étape</th>
+      <th data-i18n="jalons.th2">État</th>
+    </tr></thead>
+    <tbody>
+      <tr><td data-i18n="j1">Lieux : arbre libre, création en série, déplacement d'une branche entière</td><td class="fait" data-i18n="jalons.fait">fait</td></tr>
+      <tr><td data-i18n="j2">Objets, photos, quantités par journal de mouvements</td><td class="fait" data-i18n="jalons.fait">fait</td></tr>
+      <tr><td data-i18n="j3">Recherche, QR d'emplacement, planche d'étiquettes, scanner hors ligne</td><td class="fait" data-i18n="jalons.fait">fait</td></tr>
+      <tr><td data-i18n="j4">Sauvegarde chiffrée, classeur Excel dans les deux sens, import prévisualisé</td><td class="fait" data-i18n="jalons.fait">fait</td></tr>
+      <tr><td data-i18n="j5">Neuf langues</td><td class="fait" data-i18n="jalons.fait">fait</td></tr>
+      <tr><td data-i18n="j6">Codes-barres produits, garde-manger, cave à vin</td><td class="attente" data-i18n="jalons.encours">en cours</td></tr>
+      <tr><td data-i18n="j7">Publication App Store et Google Play</td><td class="attente" data-i18n="jalons.plustard">plus tard</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<footer><div class="wrap">
+  <img class="emb" src="assets/icon.png" alt="Homecoon">
+  <div class="nom">H O M E C O O N</div>
+  <div class="sig" data-i18n="pied.sig">par Bengacoon</div>
+  <nav>
+    <a href="confidentialite.html" data-i18n="pied.confid">Confidentialité</a>
+    <a href="mailto:jdviallat@gmail.com?subject=Homecoon" data-i18n="pied.contact">Contact</a>
+  </nav>
+</div></footer>
+
+<script src="i18n.js"></script>
+<script>
+(function () {
+  var LANGUES = { fr:"Français", en:"English", de:"Deutsch", it:"Italiano", pt:"Português",
+                  es:"Español", sv:"Svenska", no:"Norsk", fi:"Suomi" };
+  var sel = document.getElementById("langue");
+  Object.keys(LANGUES).forEach(function (k) {
+    var o = document.createElement("option"); o.value = k; o.textContent = LANGUES[k]; sel.appendChild(o);
+  });
+
+  function appliquer(lang) {
+    var dico = (typeof DICT !== "undefined" && DICT[lang]) || {};
+    var base = (typeof DICT !== "undefined" && DICT.fr) || {};
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var cle = el.getAttribute("data-i18n");
+      // Une clé absente retombe sur le français, jamais sur la clé nue.
+      var val = dico[cle] !== undefined ? dico[cle] : base[cle];
+      if (val === undefined) return;
+      var attr = el.getAttribute("data-i18n-attr");
+      if (attr) el.setAttribute(attr, val);
+      else if (cle === "meta.title") document.title = val;
+      else el.innerHTML = val;
+    });
+    document.documentElement.lang = lang;
+    try { localStorage.setItem("homecoon.langue", lang); } catch (e) {}
+    sel.value = lang;
+  }
+
+  var choisie = null;
+  try { choisie = localStorage.getItem("homecoon.langue"); } catch (e) {}
+  if (!choisie) {
+    var nav = (navigator.language || "fr").slice(0, 2).toLowerCase();
+    if (nav === "nb" || nav === "nn") nav = "no";
+    choisie = LANGUES[nav] ? nav : "fr";
+  }
+  appliquer(choisie);
+  sel.addEventListener("change", function () { appliquer(sel.value); });
+})();
+</script>
+</body>
+</html>

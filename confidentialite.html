@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="t">Homecoon — Confidentialité</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+  :root{--papier:#FAF8F5;--carte:#FFFFFF;--bord:#E2DBD1;--encre:#1C1917;--muted:#6B635B;--ambre:#B45309}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Public Sans",-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+       color:var(--encre);background:var(--papier);line-height:1.65}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  h1,h2{font-family:Archivo,Arial,sans-serif;letter-spacing:-.02em}
+  header{border-bottom:1px solid var(--bord);padding:22px 0}
+  header .wrap{display:flex;align-items:center;gap:12px}
+  header img{width:34px;height:34px;border-radius:9px}
+  header a{margin-left:auto;color:var(--ambre);text-decoration:none;font-weight:600;font-size:14px}
+  select{background:var(--carte);color:var(--encre);border:1px solid var(--bord);border-radius:8px;
+         padding:6px 8px;font-size:13px;font-family:inherit;margin-left:14px}
+  main{padding:44px 0 72px}
+  h1{font-size:clamp(28px,5vw,40px)}
+  .maj{color:var(--muted);font-size:14px;margin-top:8px}
+  h2{font-size:19px;margin:34px 0 8px}
+  p{margin-bottom:12px}
+  .fort{background:var(--carte);border:1px solid var(--bord);border-left:4px solid var(--ambre);
+        border-radius:12px;padding:18px 20px;margin:26px 0}
+  footer{border-top:1px solid var(--bord);padding:26px 0;color:var(--muted);font-size:14px;text-align:center}
+  a{color:var(--ambre)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img src="assets/icon.png" alt="Homecoon">
+  <strong>Homecoon</strong>
+  <a href="index.html" data-i18n="retour">← Retour au site</a>
+  <select id="langue" aria-label="Langue"></select>
+</div></header>
+
+<main><div class="wrap">
+  <h1 data-i18n="h1">Confidentialité</h1>
+  <div class="maj" data-i18n="maj">Dernière mise à jour : 8 septembre 2026</div>
+
+  <div class="fort"><p data-i18n="resume"><strong>Homecoon ne collecte rien.</strong> Il n'y a ni compte, ni serveur, ni mesure d'audience. Votre inventaire, vos photos et vos documents restent sur votre appareil, et n'en sortent que si vous décidez vous-même de les partager.</p></div>
+
+  <h2 data-i18n="h2a">Ce qui est enregistré, et où</h2>
+  <p data-i18n="pa">Tout ce que vous saisissez — lieux, objets, quantités, photos, documents — est enregistré dans la mémoire privée de l'application, sur votre téléphone. Rien n'est transmis à l'éditeur ni à un tiers. Désinstaller l'application efface ces données : faites une sauvegarde avant.</p>
+
+  <h2 data-i18n="h2b">Appareil photo et photothèque</h2>
+  <p data-i18n="pb">L'appareil photo sert uniquement à lire les QR codes de vos rangements, les codes-barres des produits, et à photographier vos objets. Les images sont traitées sur l'appareil et enregistrées localement. Aucune image n'est envoyée ailleurs.</p>
+
+  <h2 data-i18n="h2c">Sauvegardes et exports</h2>
+  <p data-i18n="pc">Vous pouvez à tout moment exporter vos données (archive complète, classeur Excel, CSV, JSON). Le fichier produit est placé dans l'application, puis partagé uniquement si vous le demandez, vers la destination que vous choisissez. La sauvegarde peut être chiffrée par une phrase de passe que vous êtes seul à connaître : sans elle, personne — éditeur compris — ne peut la lire.</p>
+
+  <h2 data-i18n="h2d">Connexions réseau</h2>
+  <p data-i18n="pd">L'application fonctionne hors ligne. Elle n'utilise le réseau que dans deux cas, tous deux déclenchés par vous : rechercher un produit scanné dans une base publique et gratuite (Open Food Facts et ses équivalents), et vérifier s'il existe une nouvelle version. Aucune de ces requêtes ne contient d'information personnelle.</p>
+
+  <h2 data-i18n="h2e">Fonctions d'intelligence artificielle</h2>
+  <p data-i18n="pe">Si une fonction d'assistance par IA est activée dans une version future, elle exigera votre propre clé de fournisseur, rangée dans le coffre sécurisé du système. Elle n'est jamais activée par défaut, et aucune donnée n'est envoyée sans une action explicite de votre part.</p>
+
+  <h2 data-i18n="h2f">Achat</h2>
+  <p data-i18n="pf">L'achat de la version complète est traité par l'App Store ou Google Play. L'éditeur ne voit ni votre moyen de paiement, ni votre adresse. Sur la version distribuée hors magasin, une licence signée hors ligne remplace l'achat intégré.</p>
+
+  <h2 data-i18n="h2g">Vos droits, et une question</h2>
+  <p data-i18n="pg">Comme aucune donnée n'est collectée, il n'y a rien à demander, corriger ou supprimer chez l'éditeur. Pour toute question : <a href="mailto:jdviallat@gmail.com?subject=Homecoon%20-%20confidentialite">jdviallat@gmail.com</a>.</p>
+</div></main>
+
+<footer><div class="wrap">Homecoon — <span data-i18n="sig">par Bengacoon</span></div></footer>
+
+<script>
+var DICT = {
+ fr:{},
+ en:{t:"Homecoon — Privacy",retour:"← Back to the site",h1:"Privacy",maj:"Last updated: 8 September 2026",
+  resume:"<strong>Homecoon collects nothing.</strong> There is no account, no server, no analytics. Your inventory, your photos and your documents stay on your device, and only leave it if you decide to share them.",
+  h2a:"What is stored, and where",pa:"Everything you enter — places, items, quantities, photos, documents — is stored in the app's private storage, on your phone. Nothing is sent to the publisher or to a third party. Uninstalling the app erases this data: make a backup first.",
+  h2b:"Camera and photo library",pb:"The camera is used only to read the QR codes on your storage, product barcodes, and to photograph your items. Images are processed on the device and stored locally. No image is sent anywhere.",
+  h2c:"Backups and exports",pc:"You can export your data at any time (full archive, Excel workbook, CSV, JSON). The file is created inside the app and shared only when you ask, to the destination you choose. A backup can be encrypted with a passphrase only you know: without it, nobody — the publisher included — can read it.",
+  h2d:"Network connections",pd:"The app works offline. It uses the network in two cases only, both triggered by you: looking up a scanned product in a free public database (Open Food Facts and its siblings), and checking whether a new version exists. Neither request carries personal information.",
+  h2e:"Artificial intelligence features",pe:"If an AI assistance feature is enabled in a future version, it will require your own provider key, kept in the system's secure store. It is never on by default, and no data is sent without an explicit action from you.",
+  h2f:"Purchase",pf:"Buying the full version is handled by the App Store or Google Play. The publisher sees neither your payment method nor your address. On the version distributed outside the stores, an offline-signed licence replaces the in-app purchase.",
+  h2g:"Your rights, and a question",pg:"Since no data is collected, there is nothing to request, correct or delete from the publisher. Any question: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20privacy\">jdviallat@gmail.com</a>.",
+  sig:"by Bengacoon"},
+ de:{t:"Homecoon — Datenschutz",retour:"← Zurück zur Website",h1:"Datenschutz",maj:"Letzte Aktualisierung: 8. September 2026",
+  resume:"<strong>Homecoon erhebt nichts.</strong> Es gibt kein Konto, keinen Server, keine Reichweitenmessung. Ihr Inventar, Ihre Fotos und Ihre Dokumente bleiben auf Ihrem Gerät und verlassen es nur, wenn Sie es selbst entscheiden.",
+  h2a:"Was gespeichert wird, und wo",pa:"Alles, was Sie eingeben — Orte, Objekte, Mengen, Fotos, Dokumente — wird im privaten Speicher der App auf Ihrem Telefon abgelegt. Nichts wird an den Herausgeber oder Dritte übertragen. Beim Deinstallieren werden diese Daten gelöscht: Sichern Sie vorher.",
+  h2b:"Kamera und Fotomediathek",pb:"Die Kamera dient ausschließlich dazu, die QR-Codes Ihrer Aufbewahrung und Produkt-Barcodes zu lesen sowie Ihre Objekte zu fotografieren. Bilder werden auf dem Gerät verarbeitet und lokal gespeichert. Kein Bild wird irgendwohin gesendet.",
+  h2c:"Sicherungen und Exporte",pc:"Sie können Ihre Daten jederzeit exportieren (vollständiges Archiv, Excel-Arbeitsmappe, CSV, JSON). Die Datei entsteht in der App und wird nur geteilt, wenn Sie es verlangen, an das Ziel Ihrer Wahl. Eine Sicherung kann mit einer nur Ihnen bekannten Passphrase verschlüsselt werden: Ohne sie kann niemand — auch der Herausgeber nicht — sie lesen.",
+  h2d:"Netzwerkverbindungen",pd:"Die App arbeitet offline. Das Netz wird nur in zwei von Ihnen ausgelösten Fällen genutzt: ein gescanntes Produkt in einer kostenlosen öffentlichen Datenbank nachschlagen (Open Food Facts und Verwandte) und prüfen, ob eine neue Version vorliegt. Keine dieser Anfragen enthält persönliche Angaben.",
+  h2e:"Funktionen mit künstlicher Intelligenz",pe:"Wird in einer künftigen Version eine KI-Unterstützung aktiviert, verlangt sie Ihren eigenen Anbieterschlüssel, abgelegt im sicheren Speicher des Systems. Sie ist nie voreingestellt aktiv, und ohne ausdrückliche Handlung von Ihnen werden keine Daten gesendet.",
+  h2f:"Kauf",pf:"Der Kauf der Vollversion wird vom App Store oder von Google Play abgewickelt. Der Herausgeber sieht weder Ihr Zahlungsmittel noch Ihre Adresse. Bei der außerhalb der Stores verteilten Version ersetzt eine offline signierte Lizenz den In-App-Kauf.",
+  h2g:"Ihre Rechte, und eine Frage",pg:"Da keine Daten erhoben werden, gibt es beim Herausgeber nichts anzufordern, zu berichtigen oder zu löschen. Fragen: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20Datenschutz\">jdviallat@gmail.com</a>.",
+  sig:"von Bengacoon"},
+ it:{t:"Homecoon — Riservatezza",retour:"← Torna al sito",h1:"Riservatezza",maj:"Ultimo aggiornamento: 8 settembre 2026",
+  resume:"<strong>Homecoon non raccoglie nulla.</strong> Non c'è account, né server, né analisi del traffico. Il tuo inventario, le foto e i documenti restano sul dispositivo e ne escono solo se decidi tu di condividerli.",
+  h2a:"Cosa viene salvato, e dove",pa:"Tutto ciò che inserisci — luoghi, oggetti, quantità, foto, documenti — è salvato nella memoria privata dell'app, sul tuo telefono. Nulla viene trasmesso all'editore o a terzi. Disinstallare l'app cancella questi dati: fai prima un backup.",
+  h2b:"Fotocamera e libreria foto",pb:"La fotocamera serve solo a leggere i QR dei tuoi contenitori, i codici a barre dei prodotti e a fotografare gli oggetti. Le immagini sono elaborate sul dispositivo e salvate localmente. Nessuna immagine viene inviata altrove.",
+  h2c:"Backup ed esportazioni",pc:"Puoi esportare i tuoi dati in ogni momento (archivio completo, cartella Excel, CSV, JSON). Il file viene creato nell'app e condiviso solo su tua richiesta, verso la destinazione che scegli. Il backup può essere cifrato con una frase segreta che conosci solo tu: senza di essa nessuno — editore compreso — può leggerlo.",
+  h2d:"Connessioni di rete",pd:"L'app funziona offline. Usa la rete solo in due casi, entrambi avviati da te: cercare un prodotto scansionato in una banca dati pubblica e gratuita (Open Food Facts e affini) e verificare se esiste una nuova versione. Nessuna di queste richieste contiene informazioni personali.",
+  h2e:"Funzioni di intelligenza artificiale",pe:"Se una funzione di assistenza IA sarà attivata in una versione futura, richiederà la tua chiave di fornitore, custodita nel portachiavi sicuro del sistema. Non è mai attiva per impostazione predefinita e nessun dato parte senza una tua azione esplicita.",
+  h2f:"Acquisto",pf:"L'acquisto della versione completa è gestito da App Store o Google Play. L'editore non vede né il metodo di pagamento né l'indirizzo. Nella versione distribuita fuori dagli store, una licenza firmata offline sostituisce l'acquisto in-app.",
+  h2g:"I tuoi diritti, e una domanda",pg:"Poiché non viene raccolto alcun dato, non c'è nulla da richiedere, correggere o cancellare presso l'editore. Per domande: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20riservatezza\">jdviallat@gmail.com</a>.",
+  sig:"di Bengacoon"},
+ pt:{t:"Homecoon — Privacidade",retour:"← Voltar ao site",h1:"Privacidade",maj:"Última atualização: 8 de setembro de 2026",
+  resume:"<strong>O Homecoon não recolhe nada.</strong> Não há conta, nem servidor, nem medição de audiência. O seu inventário, as suas fotos e os seus documentos ficam no seu aparelho e só saem se decidir partilhá-los.",
+  h2a:"O que é guardado, e onde",pa:"Tudo o que introduz — locais, objetos, quantidades, fotos, documentos — fica na memória privada da aplicação, no seu telemóvel. Nada é transmitido ao editor nem a terceiros. Desinstalar apaga estes dados: faça primeiro uma cópia de segurança.",
+  h2b:"Câmara e biblioteca de fotos",pb:"A câmara serve apenas para ler os QR das suas arrumações, os códigos de barras dos produtos e para fotografar os seus objetos. As imagens são tratadas no aparelho e guardadas localmente. Nenhuma imagem é enviada para lado nenhum.",
+  h2c:"Cópias de segurança e exportações",pc:"Pode exportar os seus dados quando quiser (arquivo completo, livro Excel, CSV, JSON). O ficheiro é criado dentro da aplicação e só é partilhado quando o pedir, para o destino que escolher. A cópia pode ser cifrada com uma frase-passe que só você conhece: sem ela, ninguém — nem o editor — a consegue ler.",
+  h2d:"Ligações de rede",pd:"A aplicação funciona offline. Usa a rede apenas em dois casos, ambos iniciados por si: procurar um produto lido numa base pública e gratuita (Open Food Facts e afins) e verificar se existe uma nova versão. Nenhum destes pedidos contém informação pessoal.",
+  h2e:"Funcionalidades de inteligência artificial",pe:"Se uma função de assistência por IA for ativada numa versão futura, exigirá a sua própria chave de fornecedor, guardada no cofre seguro do sistema. Nunca está ativa por omissão e nenhum dado sai sem uma ação explícita sua.",
+  h2f:"Compra",pf:"A compra da versão completa é tratada pela App Store ou pelo Google Play. O editor não vê o seu meio de pagamento nem a sua morada. Na versão distribuída fora das lojas, uma licença assinada offline substitui a compra integrada.",
+  h2g:"Os seus direitos, e uma questão",pg:"Como não é recolhido qualquer dado, não há nada a pedir, corrigir ou eliminar junto do editor. Para qualquer questão: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20privacidade\">jdviallat@gmail.com</a>.",
+  sig:"por Bengacoon"},
+ es:{t:"Homecoon — Privacidad",retour:"← Volver al sitio",h1:"Privacidad",maj:"Última actualización: 8 de septiembre de 2026",
+  resume:"<strong>Homecoon no recopila nada.</strong> No hay cuenta, ni servidor, ni medición de audiencia. Tu inventario, tus fotos y tus documentos se quedan en tu dispositivo y solo salen si decides compartirlos.",
+  h2a:"Qué se guarda, y dónde",pa:"Todo lo que introduces — lugares, objetos, cantidades, fotos, documentos — se guarda en la memoria privada de la aplicación, en tu teléfono. Nada se transmite al editor ni a terceros. Desinstalar la aplicación borra estos datos: haz antes una copia de seguridad.",
+  h2b:"Cámara y fototeca",pb:"La cámara sirve únicamente para leer los QR de tus espacios, los códigos de barras de los productos y para fotografiar tus objetos. Las imágenes se procesan en el dispositivo y se guardan localmente. Ninguna imagen se envía a ninguna parte.",
+  h2c:"Copias de seguridad y exportaciones",pc:"Puedes exportar tus datos en cualquier momento (archivo completo, libro de Excel, CSV, JSON). El archivo se crea dentro de la aplicación y solo se comparte si lo pides, al destino que elijas. La copia puede cifrarse con una frase de contraseña que solo tú conoces: sin ella, nadie —tampoco el editor— puede leerla.",
+  h2d:"Conexiones de red",pd:"La aplicación funciona sin conexión. Solo usa la red en dos casos, ambos iniciados por ti: buscar un producto escaneado en una base pública y gratuita (Open Food Facts y similares) y comprobar si hay una nueva versión. Ninguna de estas peticiones contiene información personal.",
+  h2e:"Funciones de inteligencia artificial",pe:"Si en una versión futura se activa una función de asistencia con IA, exigirá tu propia clave de proveedor, guardada en el almacén seguro del sistema. Nunca está activada por defecto y no se envía ningún dato sin una acción explícita tuya.",
+  h2f:"Compra",pf:"La compra de la versión completa la gestiona App Store o Google Play. El editor no ve ni tu medio de pago ni tu dirección. En la versión distribuida fuera de las tiendas, una licencia firmada sin conexión sustituye a la compra integrada.",
+  h2g:"Tus derechos, y una pregunta",pg:"Como no se recopila ningún dato, no hay nada que solicitar, corregir ni eliminar ante el editor. Para cualquier pregunta: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20privacidad\">jdviallat@gmail.com</a>.",
+  sig:"de Bengacoon"},
+ sv:{t:"Homecoon — Integritet",retour:"← Tillbaka till webbplatsen",h1:"Integritet",maj:"Senast uppdaterad: 8 september 2026",
+  resume:"<strong>Homecoon samlar inte in något.</strong> Det finns inget konto, ingen server, ingen besöksmätning. Ditt inventarium, dina foton och dina dokument stannar på enheten och lämnar den bara om du själv väljer att dela dem.",
+  h2a:"Vad som sparas, och var",pa:"Allt du matar in — platser, föremål, antal, foton, dokument — sparas i appens privata lagring, i din telefon. Inget skickas till utgivaren eller till tredje part. Avinstallation raderar dessa data: gör en säkerhetskopia först.",
+  h2b:"Kamera och bildbibliotek",pb:"Kameran används bara för att läsa QR-koder på dina förvaringar, produkters streckkoder och för att fotografera dina föremål. Bilderna behandlas på enheten och sparas lokalt. Ingen bild skickas någonstans.",
+  h2c:"Säkerhetskopior och export",pc:"Du kan när som helst exportera dina data (fullständigt arkiv, Excel-arbetsbok, CSV, JSON). Filen skapas i appen och delas bara när du ber om det, till den destination du väljer. Säkerhetskopian kan krypteras med en lösenfras som bara du känner till: utan den kan ingen — inte heller utgivaren — läsa den.",
+  h2d:"Nätverksanslutningar",pd:"Appen fungerar offline. Nätet används bara i två fall, båda utlösta av dig: att slå upp en skannad produkt i en fri och offentlig databas (Open Food Facts med släktingar) och att kontrollera om det finns en ny version. Ingen av dessa förfrågningar innehåller personuppgifter.",
+  h2e:"Funktioner med artificiell intelligens",pe:"Om en AI-funktion aktiveras i en framtida version kräver den din egen leverantörsnyckel, förvarad i systemets säkra lagring. Den är aldrig påslagen som standard, och inga data skickas utan en uttrycklig åtgärd från dig.",
+  h2f:"Köp",pf:"Köpet av fullversionen hanteras av App Store eller Google Play. Utgivaren ser varken ditt betalsätt eller din adress. I versionen som sprids utanför butikerna ersätts köpet av en offline-signerad licens.",
+  h2g:"Dina rättigheter, och en fråga",pg:"Eftersom inga uppgifter samlas in finns det inget att begära, rätta eller radera hos utgivaren. Frågor: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20integritet\">jdviallat@gmail.com</a>.",
+  sig:"av Bengacoon"},
+ no:{t:"Homecoon — Personvern",retour:"← Tilbake til nettstedet",h1:"Personvern",maj:"Sist oppdatert: 8. september 2026",
+  resume:"<strong>Homecoon samler ikke inn noe.</strong> Det finnes ingen konto, ingen server, ingen trafikkmåling. Inventaret, bildene og dokumentene dine blir liggende på enheten, og forlater den bare hvis du selv velger å dele dem.",
+  h2a:"Hva som lagres, og hvor",pa:"Alt du legger inn — steder, gjenstander, antall, bilder, dokumenter — lagres i appens private lagring, på telefonen din. Ingenting sendes til utgiveren eller til tredjeparter. Avinstallering sletter disse dataene: ta en sikkerhetskopi først.",
+  h2b:"Kamera og bildebibliotek",pb:"Kameraet brukes bare til å lese QR-kodene på oppbevaringen din, produkters strekkoder og til å fotografere gjenstandene dine. Bildene behandles på enheten og lagres lokalt. Ingen bilder sendes noe sted.",
+  h2c:"Sikkerhetskopier og eksport",pc:"Du kan når som helst eksportere dataene dine (fullt arkiv, Excel-arbeidsbok, CSV, JSON). Filen opprettes i appen og deles bare når du ber om det, til destinasjonen du velger. Sikkerhetskopien kan krypteres med en passfrase bare du kjenner: uten den kan ingen — heller ikke utgiveren — lese den.",
+  h2d:"Nettverkstilkoblinger",pd:"Appen virker uten nett. Nettet brukes bare i to tilfeller, begge utløst av deg: å slå opp et skannet produkt i en gratis, offentlig database (Open Food Facts og tilsvarende) og å sjekke om det finnes en ny versjon. Ingen av disse forespørslene inneholder personopplysninger.",
+  h2e:"Funksjoner med kunstig intelligens",pe:"Hvis en KI-funksjon aktiveres i en framtidig versjon, krever den din egen leverandørnøkkel, lagret i systemets sikre lager. Den er aldri på som standard, og ingen data sendes uten en uttrykkelig handling fra deg.",
+  h2f:"Kjøp",pf:"Kjøp av fullversjonen håndteres av App Store eller Google Play. Utgiveren ser verken betalingsmiddelet eller adressen din. I versjonen som distribueres utenfor butikkene, erstatter en offline-signert lisens kjøpet i appen.",
+  h2g:"Rettighetene dine, og et spørsmål",pg:"Siden ingen data samles inn, er det ingenting å be om, rette eller slette hos utgiveren. Spørsmål: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20personvern\">jdviallat@gmail.com</a>.",
+  sig:"av Bengacoon"},
+ fi:{t:"Homecoon — Tietosuoja",retour:"← Takaisin sivustolle",h1:"Tietosuoja",maj:"Viimeksi päivitetty: 8. syyskuuta 2026",
+  resume:"<strong>Homecoon ei kerää mitään.</strong> Ei tiliä, ei palvelinta, ei kävijämittausta. Varastosi, kuvasi ja asiakirjasi pysyvät laitteessasi eivätkä poistu sieltä, ellet itse päätä jakaa niitä.",
+  h2a:"Mitä tallennetaan ja minne",pa:"Kaikki syöttämäsi — paikat, esineet, määrät, kuvat, asiakirjat — tallennetaan sovelluksen yksityiseen muistiin puhelimessasi. Mitään ei lähetetä julkaisijalle eikä kolmansille. Sovelluksen poisto pyyhkii nämä tiedot: tee ensin varmuuskopio.",
+  h2b:"Kamera ja kuvakirjasto",pb:"Kameraa käytetään vain säilytyspaikkojesi QR-koodien ja tuotteiden viivakoodien lukemiseen sekä esineidesi kuvaamiseen. Kuvat käsitellään laitteessa ja tallennetaan paikallisesti. Yhtäkään kuvaa ei lähetetä minnekään.",
+  h2c:"Varmuuskopiot ja viennit",pc:"Voit viedä tietosi milloin tahansa (täysi arkisto, Excel-työkirja, CSV, JSON). Tiedosto luodaan sovelluksessa ja jaetaan vain pyynnöstäsi valitsemaasi kohteeseen. Varmuuskopion voi salata salalauseella, jonka vain sinä tiedät: ilman sitä kukaan — julkaisija mukaan lukien — ei voi lukea sitä.",
+  h2d:"Verkkoyhteydet",pd:"Sovellus toimii ilman verkkoa. Verkkoa käytetään vain kahdessa tapauksessa, molemmat sinun käynnistäminäsi: skannatun tuotteen haku ilmaisesta julkisesta tietokannasta (Open Food Facts ja vastaavat) ja uuden version tarkistus. Kumpikaan pyyntö ei sisällä henkilötietoja.",
+  h2e:"Tekoälytoiminnot",pe:"Jos tekoälyavustus otetaan käyttöön tulevassa versiossa, se vaatii oman palveluntarjoaja-avaimesi, joka säilytetään järjestelmän suojatussa varastossa. Se ei ole koskaan oletuksena päällä, eikä mitään tietoja lähetetä ilman nimenomaista toimenpidettäsi.",
+  h2f:"Osto",pf:"Täysversion oston hoitaa App Store tai Google Play. Julkaisija ei näe maksutapaasi eikä osoitettasi. Kauppojen ulkopuolella jaettavassa versiossa offline-allekirjoitettu lisenssi korvaa sovelluksensisäisen oston.",
+  h2g:"Oikeutesi ja kysymykset",pg:"Koska tietoja ei kerätä, julkaisijalta ei ole mitään pyydettävää, korjattavaa tai poistettavaa. Kysymykset: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20tietosuoja\">jdviallat@gmail.com</a>.",
+  sig:"tekijä Bengacoon"}
+};
+
+(function () {
+  var LANGUES = { fr:"Français", en:"English", de:"Deutsch", it:"Italiano", pt:"Português",
+                  es:"Español", sv:"Svenska", no:"Norsk", fi:"Suomi" };
+  var sel = document.getElementById("langue");
+  Object.keys(LANGUES).forEach(function (k) {
+    var o = document.createElement("option"); o.value = k; o.textContent = LANGUES[k]; sel.appendChild(o);
+  });
+  // Le français est dans le HTML : le dictionnaire n'a que les autres langues.
+  function appliquer(lang) {
+    var dico = DICT[lang] || {};
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      if (!el.hasAttribute("data-fr")) el.setAttribute("data-fr", el.innerHTML);
+      var cle = el.getAttribute("data-i18n");
+      var val = dico[cle] !== undefined ? dico[cle] : el.getAttribute("data-fr");
+      if (cle === "t") document.title = (dico[cle] || el.getAttribute("data-fr"));
+      else el.innerHTML = val;
+    });
+    document.documentElement.lang = lang;
+    try { localStorage.setItem("homecoon.langue", lang); } catch (e) {}
+    sel.value = lang;
+  }
+  var choisie = null;
+  try { choisie = localStorage.getItem("homecoon.langue"); } catch (e) {}
+  if (!choisie) {
+    var nav = (navigator.language || "fr").slice(0, 2).toLowerCase();
+    if (nav === "nb" || nav === "nn") nav = "no";
+    choisie = LANGUES[nav] ? nav : "fr";
+  }
+  appliquer(choisie);
+  sel.addEventListener("change", function () { appliquer(sel.value); });
+})();
+</script>
+</body>
+</html>
