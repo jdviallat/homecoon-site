@@ -29,6 +29,8 @@
         border-radius:12px;padding:18px 20px;margin:26px 0}
   footer{border-top:1px solid var(--bord);padding:26px 0;color:var(--muted);font-size:14px;text-align:center}
   a{color:var(--ambre)}
+  .devband{background:var(--ambre);color:#fff;text-align:center;font-weight:800;
+           font-size:13.5px;padding:9px 16px;letter-spacing:.3px}
 </style>
 </head>
 <body>
@@ -38,6 +40,8 @@
   <a href="index.html" data-i18n="retour">← Retour au site</a>
   <select id="langue" aria-label="Langue"></select>
 </div></header>
+
+<div class="devband" data-i18n="devband">En cours de développement — ce site présente une application à venir</div>
 
 <main><div class="wrap">
   <h1 data-i18n="h1">Confidentialité</h1>
@@ -72,7 +76,7 @@
 <script>
 var DICT = {
  fr:{},
- en:{t:"Homecoon — Privacy",retour:"← Back to the site",h1:"Privacy",maj:"Last updated: 8 September 2026",
+ en:{devband:"Under development — this site presents an app still to come",t:"Homecoon — Privacy",retour:"← Back to the site",h1:"Privacy",maj:"Last updated: 8 September 2026",
   resume:"<strong>Homecoon collects nothing.</strong> There is no account, no server, no analytics. Your inventory, your photos and your documents stay on your device, and only leave it if you decide to share them.",
   h2a:"What is stored, and where",pa:"Everything you enter — places, items, quantities, photos, documents — is stored in the app's private storage, on your phone. Nothing is sent to the publisher or to a third party. Uninstalling the app erases this data: make a backup first.",
   h2b:"Camera and photo library",pb:"The camera is used only to read the QR codes on your storage, product barcodes, and to photograph your items. Images are processed on the device and stored locally. No image is sent anywhere.",
@@ -82,7 +86,7 @@ var DICT = {
   h2f:"Purchase",pf:"Buying the full version is handled by the App Store or Google Play. The publisher sees neither your payment method nor your address. On the version distributed outside the stores, an offline-signed licence replaces the in-app purchase.",
   h2g:"Your rights, and a question",pg:"Since no data is collected, there is nothing to request, correct or delete from the publisher. Any question: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20privacy\">jdviallat@gmail.com</a>.",
   sig:"by Bengacoon"},
- de:{t:"Homecoon — Datenschutz",retour:"← Zurück zur Website",h1:"Datenschutz",maj:"Letzte Aktualisierung: 8. September 2026",
+ de:{devband:"In Entwicklung — diese Seite stellt eine kommende App vor",t:"Homecoon — Datenschutz",retour:"← Zurück zur Website",h1:"Datenschutz",maj:"Letzte Aktualisierung: 8. September 2026",
   resume:"<strong>Homecoon erhebt nichts.</strong> Es gibt kein Konto, keinen Server, keine Reichweitenmessung. Ihr Inventar, Ihre Fotos und Ihre Dokumente bleiben auf Ihrem Gerät und verlassen es nur, wenn Sie es selbst entscheiden.",
   h2a:"Was gespeichert wird, und wo",pa:"Alles, was Sie eingeben — Orte, Objekte, Mengen, Fotos, Dokumente — wird im privaten Speicher der App auf Ihrem Telefon abgelegt. Nichts wird an den Herausgeber oder Dritte übertragen. Beim Deinstallieren werden diese Daten gelöscht: Sichern Sie vorher.",
   h2b:"Kamera und Fotomediathek",pb:"Die Kamera dient ausschließlich dazu, die QR-Codes Ihrer Aufbewahrung und Produkt-Barcodes zu lesen sowie Ihre Objekte zu fotografieren. Bilder werden auf dem Gerät verarbeitet und lokal gespeichert. Kein Bild wird irgendwohin gesendet.",
@@ -92,7 +96,7 @@ var DICT = {
   h2f:"Kauf",pf:"Der Kauf der Vollversion wird vom App Store oder von Google Play abgewickelt. Der Herausgeber sieht weder Ihr Zahlungsmittel noch Ihre Adresse. Bei der außerhalb der Stores verteilten Version ersetzt eine offline signierte Lizenz den In-App-Kauf.",
   h2g:"Ihre Rechte, und eine Frage",pg:"Da keine Daten erhoben werden, gibt es beim Herausgeber nichts anzufordern, zu berichtigen oder zu löschen. Fragen: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20Datenschutz\">jdviallat@gmail.com</a>.",
   sig:"von Bengacoon"},
- it:{t:"Homecoon — Riservatezza",retour:"← Torna al sito",h1:"Riservatezza",maj:"Ultimo aggiornamento: 8 settembre 2026",
+ it:{devband:"In sviluppo — questo sito presenta un'app in arrivo",t:"Homecoon — Riservatezza",retour:"← Torna al sito",h1:"Riservatezza",maj:"Ultimo aggiornamento: 8 settembre 2026",
   resume:"<strong>Homecoon non raccoglie nulla.</strong> Non c'è account, né server, né analisi del traffico. Il tuo inventario, le foto e i documenti restano sul dispositivo e ne escono solo se decidi tu di condividerli.",
   h2a:"Cosa viene salvato, e dove",pa:"Tutto ciò che inserisci — luoghi, oggetti, quantità, foto, documenti — è salvato nella memoria privata dell'app, sul tuo telefono. Nulla viene trasmesso all'editore o a terzi. Disinstallare l'app cancella questi dati: fai prima un backup.",
   h2b:"Fotocamera e libreria foto",pb:"La fotocamera serve solo a leggere i QR dei tuoi contenitori, i codici a barre dei prodotti e a fotografare gli oggetti. Le immagini sono elaborate sul dispositivo e salvate localmente. Nessuna immagine viene inviata altrove.",
@@ -102,7 +106,7 @@ var DICT = {
   h2f:"Acquisto",pf:"L'acquisto della versione completa è gestito da App Store o Google Play. L'editore non vede né il metodo di pagamento né l'indirizzo. Nella versione distribuita fuori dagli store, una licenza firmata offline sostituisce l'acquisto in-app.",
   h2g:"I tuoi diritti, e una domanda",pg:"Poiché non viene raccolto alcun dato, non c'è nulla da richiedere, correggere o cancellare presso l'editore. Per domande: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20riservatezza\">jdviallat@gmail.com</a>.",
   sig:"di Bengacoon"},
- pt:{t:"Homecoon — Privacidade",retour:"← Voltar ao site",h1:"Privacidade",maj:"Última atualização: 8 de setembro de 2026",
+ pt:{devband:"Em desenvolvimento — este site apresenta uma app que está para chegar",t:"Homecoon — Privacidade",retour:"← Voltar ao site",h1:"Privacidade",maj:"Última atualização: 8 de setembro de 2026",
   resume:"<strong>O Homecoon não recolhe nada.</strong> Não há conta, nem servidor, nem medição de audiência. O seu inventário, as suas fotos e os seus documentos ficam no seu aparelho e só saem se decidir partilhá-los.",
   h2a:"O que é guardado, e onde",pa:"Tudo o que introduz — locais, objetos, quantidades, fotos, documentos — fica na memória privada da aplicação, no seu telemóvel. Nada é transmitido ao editor nem a terceiros. Desinstalar apaga estes dados: faça primeiro uma cópia de segurança.",
   h2b:"Câmara e biblioteca de fotos",pb:"A câmara serve apenas para ler os QR das suas arrumações, os códigos de barras dos produtos e para fotografar os seus objetos. As imagens são tratadas no aparelho e guardadas localmente. Nenhuma imagem é enviada para lado nenhum.",
@@ -112,7 +116,7 @@ var DICT = {
   h2f:"Compra",pf:"A compra da versão completa é tratada pela App Store ou pelo Google Play. O editor não vê o seu meio de pagamento nem a sua morada. Na versão distribuída fora das lojas, uma licença assinada offline substitui a compra integrada.",
   h2g:"Os seus direitos, e uma questão",pg:"Como não é recolhido qualquer dado, não há nada a pedir, corrigir ou eliminar junto do editor. Para qualquer questão: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20privacidade\">jdviallat@gmail.com</a>.",
   sig:"por Bengacoon"},
- es:{t:"Homecoon — Privacidad",retour:"← Volver al sitio",h1:"Privacidad",maj:"Última actualización: 8 de septiembre de 2026",
+ es:{devband:"En desarrollo — este sitio presenta una aplicación por llegar",t:"Homecoon — Privacidad",retour:"← Volver al sitio",h1:"Privacidad",maj:"Última actualización: 8 de septiembre de 2026",
   resume:"<strong>Homecoon no recopila nada.</strong> No hay cuenta, ni servidor, ni medición de audiencia. Tu inventario, tus fotos y tus documentos se quedan en tu dispositivo y solo salen si decides compartirlos.",
   h2a:"Qué se guarda, y dónde",pa:"Todo lo que introduces — lugares, objetos, cantidades, fotos, documentos — se guarda en la memoria privada de la aplicación, en tu teléfono. Nada se transmite al editor ni a terceros. Desinstalar la aplicación borra estos datos: haz antes una copia de seguridad.",
   h2b:"Cámara y fototeca",pb:"La cámara sirve únicamente para leer los QR de tus espacios, los códigos de barras de los productos y para fotografiar tus objetos. Las imágenes se procesan en el dispositivo y se guardan localmente. Ninguna imagen se envía a ninguna parte.",
@@ -122,7 +126,7 @@ var DICT = {
   h2f:"Compra",pf:"La compra de la versión completa la gestiona App Store o Google Play. El editor no ve ni tu medio de pago ni tu dirección. En la versión distribuida fuera de las tiendas, una licencia firmada sin conexión sustituye a la compra integrada.",
   h2g:"Tus derechos, y una pregunta",pg:"Como no se recopila ningún dato, no hay nada que solicitar, corregir ni eliminar ante el editor. Para cualquier pregunta: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20privacidad\">jdviallat@gmail.com</a>.",
   sig:"de Bengacoon"},
- sv:{t:"Homecoon — Integritet",retour:"← Tillbaka till webbplatsen",h1:"Integritet",maj:"Senast uppdaterad: 8 september 2026",
+ sv:{devband:"Under utveckling — sidan visar en app som ännu inte finns",t:"Homecoon — Integritet",retour:"← Tillbaka till webbplatsen",h1:"Integritet",maj:"Senast uppdaterad: 8 september 2026",
   resume:"<strong>Homecoon samlar inte in något.</strong> Det finns inget konto, ingen server, ingen besöksmätning. Ditt inventarium, dina foton och dina dokument stannar på enheten och lämnar den bara om du själv väljer att dela dem.",
   h2a:"Vad som sparas, och var",pa:"Allt du matar in — platser, föremål, antal, foton, dokument — sparas i appens privata lagring, i din telefon. Inget skickas till utgivaren eller till tredje part. Avinstallation raderar dessa data: gör en säkerhetskopia först.",
   h2b:"Kamera och bildbibliotek",pb:"Kameran används bara för att läsa QR-koder på dina förvaringar, produkters streckkoder och för att fotografera dina föremål. Bilderna behandlas på enheten och sparas lokalt. Ingen bild skickas någonstans.",
@@ -132,7 +136,7 @@ var DICT = {
   h2f:"Köp",pf:"Köpet av fullversionen hanteras av App Store eller Google Play. Utgivaren ser varken ditt betalsätt eller din adress. I versionen som sprids utanför butikerna ersätts köpet av en offline-signerad licens.",
   h2g:"Dina rättigheter, och en fråga",pg:"Eftersom inga uppgifter samlas in finns det inget att begära, rätta eller radera hos utgivaren. Frågor: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20integritet\">jdviallat@gmail.com</a>.",
   sig:"av Bengacoon"},
- no:{t:"Homecoon — Personvern",retour:"← Tilbake til nettstedet",h1:"Personvern",maj:"Sist oppdatert: 8. september 2026",
+ no:{devband:"Under utvikling — siden viser en app som ennå ikke finnes",t:"Homecoon — Personvern",retour:"← Tilbake til nettstedet",h1:"Personvern",maj:"Sist oppdatert: 8. september 2026",
   resume:"<strong>Homecoon samler ikke inn noe.</strong> Det finnes ingen konto, ingen server, ingen trafikkmåling. Inventaret, bildene og dokumentene dine blir liggende på enheten, og forlater den bare hvis du selv velger å dele dem.",
   h2a:"Hva som lagres, og hvor",pa:"Alt du legger inn — steder, gjenstander, antall, bilder, dokumenter — lagres i appens private lagring, på telefonen din. Ingenting sendes til utgiveren eller til tredjeparter. Avinstallering sletter disse dataene: ta en sikkerhetskopi først.",
   h2b:"Kamera og bildebibliotek",pb:"Kameraet brukes bare til å lese QR-kodene på oppbevaringen din, produkters strekkoder og til å fotografere gjenstandene dine. Bildene behandles på enheten og lagres lokalt. Ingen bilder sendes noe sted.",
@@ -142,7 +146,7 @@ var DICT = {
   h2f:"Kjøp",pf:"Kjøp av fullversjonen håndteres av App Store eller Google Play. Utgiveren ser verken betalingsmiddelet eller adressen din. I versjonen som distribueres utenfor butikkene, erstatter en offline-signert lisens kjøpet i appen.",
   h2g:"Rettighetene dine, og et spørsmål",pg:"Siden ingen data samles inn, er det ingenting å be om, rette eller slette hos utgiveren. Spørsmål: <a href=\"mailto:jdviallat@gmail.com?subject=Homecoon%20-%20personvern\">jdviallat@gmail.com</a>.",
   sig:"av Bengacoon"},
- fi:{t:"Homecoon — Tietosuoja",retour:"← Takaisin sivustolle",h1:"Tietosuoja",maj:"Viimeksi päivitetty: 8. syyskuuta 2026",
+ fi:{devband:"Kehitteillä — sivu esittelee sovellusta, jota ei vielä ole",t:"Homecoon — Tietosuoja",retour:"← Takaisin sivustolle",h1:"Tietosuoja",maj:"Viimeksi päivitetty: 8. syyskuuta 2026",
   resume:"<strong>Homecoon ei kerää mitään.</strong> Ei tiliä, ei palvelinta, ei kävijämittausta. Varastosi, kuvasi ja asiakirjasi pysyvät laitteessasi eivätkä poistu sieltä, ellet itse päätä jakaa niitä.",
   h2a:"Mitä tallennetaan ja minne",pa:"Kaikki syöttämäsi — paikat, esineet, määrät, kuvat, asiakirjat — tallennetaan sovelluksen yksityiseen muistiin puhelimessasi. Mitään ei lähetetä julkaisijalle eikä kolmansille. Sovelluksen poisto pyyhkii nämä tiedot: tee ensin varmuuskopio.",
   h2b:"Kamera ja kuvakirjasto",pb:"Kameraa käytetään vain säilytyspaikkojesi QR-koodien ja tuotteiden viivakoodien lukemiseen sekä esineidesi kuvaamiseen. Kuvat käsitellään laitteessa ja tallennetaan paikallisesti. Yhtäkään kuvaa ei lähetetä minnekään.",

@@ -3,6 +3,7 @@
 var DICT = {
 
 fr: {
+  "devband":"En cours de développement — ce site présente une application à venir",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Étagère 2 <span class='sep'>›</span> Bac B4 <span class='sep'>›</span> Boîte « Fixations »",
   "meta.title":"Homecoon — Tout retrouver chez soi",
   "meta.desc":"Homecoon, par Bengacoon : répertoriez ce qui dort dans le garage, la cave et les placards, et retrouvez n'importe quoi avec son chemin exact. Tout reste sur votre téléphone.",
@@ -66,6 +67,7 @@ fr: {
 },
 
 en: {
+  "devband":"Under development — this site presents an app still to come",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Shelf 2 <span class='sep'>›</span> Bin B4 <span class='sep'>›</span> “Fixings” box",
   "meta.title":"Homecoon — Find everything at home",
   "meta.desc":"Homecoon, by Bengacoon: list what sleeps in the garage, the cellar and the cupboards, then find anything with its exact path. Everything stays on your phone.",
@@ -129,6 +131,7 @@ en: {
 },
 
 de: {
+  "devband":"In Entwicklung — diese Seite stellt eine kommende App vor",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Regal 2 <span class='sep'>›</span> Kiste B4 <span class='sep'>›</span> Kiste „Befestigungen“",
   "meta.title":"Homecoon — Zu Hause alles wiederfinden",
   "meta.desc":"Homecoon von Bengacoon: Erfassen Sie, was in Garage, Keller und Schränken schlummert, und finden Sie alles über seinen genauen Pfad wieder. Alles bleibt auf Ihrem Telefon.",
@@ -192,6 +195,7 @@ de: {
 },
 
 it: {
+  "devband":"In sviluppo — questo sito presenta un'app in arrivo",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zona B <span class='sep'>›</span> Scaffale 2 <span class='sep'>›</span> Contenitore B4 <span class='sep'>›</span> Scatola « Fissaggi »",
   "meta.title":"Homecoon — Ritrova tutto in casa",
   "meta.desc":"Homecoon, di Bengacoon: cataloga ciò che dorme in garage, in cantina e negli armadi, e ritrova qualsiasi cosa con il suo percorso esatto. Tutto resta sul tuo telefono.",
@@ -255,6 +259,7 @@ it: {
 },
 
 pt: {
+  "devband":"Em desenvolvimento — este site apresenta uma app que está para chegar",
   "hero.chemin":"📍 Garagem <span class='sep'>›</span> Zona B <span class='sep'>›</span> Prateleira 2 <span class='sep'>›</span> Caixote B4 <span class='sep'>›</span> Caixa «Fixações»",
   "meta.title":"Homecoon — Encontre tudo em casa",
   "meta.desc":"Homecoon, por Bengacoon: catalogue o que dorme na garagem, na cave e nos armários, e encontre qualquer coisa com o seu caminho exato. Tudo fica no seu telemóvel.",
@@ -318,6 +323,7 @@ pt: {
 },
 
 es: {
+  "devband":"En desarrollo — este sitio presenta una aplicación por llegar",
   "hero.chemin":"📍 Garaje <span class='sep'>›</span> Zona B <span class='sep'>›</span> Estante 2 <span class='sep'>›</span> Caja B4 <span class='sep'>›</span> Caja «Fijaciones»",
   "meta.title":"Homecoon — Encuentra todo en casa",
   "meta.desc":"Homecoon, de Bengacoon: cataloga lo que duerme en el garaje, la bodega y los armarios, y encuentra cualquier cosa con su ruta exacta. Todo se queda en tu teléfono.",
@@ -381,6 +387,7 @@ es: {
 },
 
 sv: {
+  "devband":"Under utveckling — sidan visar en app som ännu inte finns",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zon B <span class='sep'>›</span> Hylla 2 <span class='sep'>›</span> Låda B4 <span class='sep'>›</span> Ask ”Infästning”",
   "meta.title":"Homecoon — Hitta allt hemma",
   "meta.desc":"Homecoon från Bengacoon: registrera det som sover i garaget, källaren och skåpen, och hitta vad som helst med dess exakta sökväg. Allt stannar i telefonen.",
@@ -444,6 +451,7 @@ sv: {
 },
 
 no: {
+  "devband":"Under utvikling — siden viser en app som ennå ikke finnes",
   "hero.chemin":"📍 Garasje <span class='sep'>›</span> Sone B <span class='sep'>›</span> Hylle 2 <span class='sep'>›</span> Kasse B4 <span class='sep'>›</span> Eske «Festemidler»",
   "meta.title":"Homecoon — Finn alt hjemme",
   "meta.desc":"Homecoon fra Bengacoon: registrer det som sover i garasjen, kjelleren og skapene, og finn hva som helst med nøyaktig sti. Alt blir liggende på telefonen.",
@@ -507,6 +515,7 @@ no: {
 },
 
 fi: {
+  "devband":"Kehitteillä — sivu esittelee sovellusta, jota ei vielä ole",
   "hero.chemin":"📍 Autotalli <span class='sep'>›</span> Alue B <span class='sep'>›</span> Hylly 2 <span class='sep'>›</span> Laatikko B4 <span class='sep'>›</span> Rasia ”Kiinnikkeet”",
   "meta.title":"Homecoon — Löydä kaikki kotoa",
   "meta.desc":"Homecoon, tekijänä Bengacoon: luetteloi se, mikä nukkuu autotallissa, kellarissa ja kaapeissa, ja löydä mikä tahansa tarkan polun avulla. Kaikki pysyy puhelimessasi.",
