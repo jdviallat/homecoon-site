@@ -3,6 +3,13 @@
 var DICT = {
 
 fr: {
+  "e.qr.t":"Une étiquette Homecoon",
+  "e.qr.p":"Ce code désigne un emplacement ou un objet dans un inventaire Homecoon. Son contenu est <strong>sur le téléphone de son propriétaire</strong> : ce site ne le connaît pas et ne peut pas l'afficher.",
+  "e.qr.b":"Ouvrir dans Homecoon",
+  "e.qr.n":"Vous n'avez pas l'application ?",
+  "e.404.t":"Page introuvable",
+  "e.404.p":"Cette adresse ne correspond à rien sur ce site.",
+  "e.404.b":"Retour à l'accueil",
   "devband":"En cours de développement — ce site présente une application à venir",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Étagère 2 <span class='sep'>›</span> Bac B4 <span class='sep'>›</span> Boîte « Fixations »",
   "meta.title":"Homecoon — Tout retrouver chez soi",
@@ -67,6 +74,13 @@ fr: {
 },
 
 en: {
+  "e.qr.t":"A Homecoon label",
+  "e.qr.p":"This code points to a place or an item in a Homecoon inventory. Its contents live <strong>on its owner's phone</strong>: this website does not know them and cannot show them.",
+  "e.qr.b":"Open in Homecoon",
+  "e.qr.n":"Don't have the app?",
+  "e.404.t":"Page not found",
+  "e.404.p":"This address matches nothing on this site.",
+  "e.404.b":"Back to home",
   "devband":"Under development — this site presents an app still to come",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Shelf 2 <span class='sep'>›</span> Bin B4 <span class='sep'>›</span> “Fixings” box",
   "meta.title":"Homecoon — Find everything at home",
@@ -131,6 +145,13 @@ en: {
 },
 
 de: {
+  "e.qr.t":"Ein Homecoon-Etikett",
+  "e.qr.p":"Dieser Code verweist auf einen Ort oder ein Objekt in einem Homecoon-Inventar. Sein Inhalt liegt <strong>auf dem Telefon des Besitzers</strong>: Diese Website kennt ihn nicht und kann ihn nicht anzeigen.",
+  "e.qr.b":"In Homecoon öffnen",
+  "e.qr.n":"Sie haben die App nicht?",
+  "e.404.t":"Seite nicht gefunden",
+  "e.404.p":"Diese Adresse entspricht nichts auf dieser Website.",
+  "e.404.b":"Zurück zur Startseite",
   "devband":"In Entwicklung — diese Seite stellt eine kommende App vor",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zone B <span class='sep'>›</span> Regal 2 <span class='sep'>›</span> Kiste B4 <span class='sep'>›</span> Kiste „Befestigungen“",
   "meta.title":"Homecoon — Zu Hause alles wiederfinden",
@@ -195,6 +216,13 @@ de: {
 },
 
 it: {
+  "e.qr.t":"Un'etichetta Homecoon",
+  "e.qr.p":"Questo codice indica un luogo o un oggetto in un inventario Homecoon. Il suo contenuto è <strong>sul telefono del proprietario</strong>: questo sito non lo conosce e non può mostrarlo.",
+  "e.qr.b":"Apri in Homecoon",
+  "e.qr.n":"Non hai l'applicazione?",
+  "e.404.t":"Pagina non trovata",
+  "e.404.p":"Questo indirizzo non corrisponde a nulla su questo sito.",
+  "e.404.b":"Torna alla home",
   "devband":"In sviluppo — questo sito presenta un'app in arrivo",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zona B <span class='sep'>›</span> Scaffale 2 <span class='sep'>›</span> Contenitore B4 <span class='sep'>›</span> Scatola « Fissaggi »",
   "meta.title":"Homecoon — Ritrova tutto in casa",
@@ -259,6 +287,13 @@ it: {
 },
 
 pt: {
+  "e.qr.t":"Uma etiqueta Homecoon",
+  "e.qr.p":"Este código indica um local ou um objeto num inventário Homecoon. O seu conteúdo está <strong>no telemóvel do proprietário</strong>: este site não o conhece e não o pode mostrar.",
+  "e.qr.b":"Abrir no Homecoon",
+  "e.qr.n":"Não tem a aplicação?",
+  "e.404.t":"Página não encontrada",
+  "e.404.p":"Este endereço não corresponde a nada neste site.",
+  "e.404.b":"Voltar ao início",
   "devband":"Em desenvolvimento — este site apresenta uma app que está para chegar",
   "hero.chemin":"📍 Garagem <span class='sep'>›</span> Zona B <span class='sep'>›</span> Prateleira 2 <span class='sep'>›</span> Caixote B4 <span class='sep'>›</span> Caixa «Fixações»",
   "meta.title":"Homecoon — Encontre tudo em casa",
@@ -323,6 +358,13 @@ pt: {
 },
 
 es: {
+  "e.qr.t":"Una etiqueta Homecoon",
+  "e.qr.p":"Este código señala un lugar o un objeto en un inventario Homecoon. Su contenido está <strong>en el teléfono de su propietario</strong>: este sitio no lo conoce y no puede mostrarlo.",
+  "e.qr.b":"Abrir en Homecoon",
+  "e.qr.n":"¿No tienes la aplicación?",
+  "e.404.t":"Página no encontrada",
+  "e.404.p":"Esta dirección no corresponde a nada en este sitio.",
+  "e.404.b":"Volver al inicio",
   "devband":"En desarrollo — este sitio presenta una aplicación por llegar",
   "hero.chemin":"📍 Garaje <span class='sep'>›</span> Zona B <span class='sep'>›</span> Estante 2 <span class='sep'>›</span> Caja B4 <span class='sep'>›</span> Caja «Fijaciones»",
   "meta.title":"Homecoon — Encuentra todo en casa",
@@ -387,6 +429,13 @@ es: {
 },
 
 sv: {
+  "e.qr.t":"En Homecoon-etikett",
+  "e.qr.p":"Koden pekar på en plats eller ett föremål i ett Homecoon-inventarium. Innehållet finns <strong>på ägarens telefon</strong>: den här webbplatsen känner inte till det och kan inte visa det.",
+  "e.qr.b":"Öppna i Homecoon",
+  "e.qr.n":"Har du inte appen?",
+  "e.404.t":"Sidan hittades inte",
+  "e.404.p":"Adressen motsvarar ingenting på den här webbplatsen.",
+  "e.404.b":"Till startsidan",
   "devband":"Under utveckling — sidan visar en app som ännu inte finns",
   "hero.chemin":"📍 Garage <span class='sep'>›</span> Zon B <span class='sep'>›</span> Hylla 2 <span class='sep'>›</span> Låda B4 <span class='sep'>›</span> Ask ”Infästning”",
   "meta.title":"Homecoon — Hitta allt hemma",
@@ -451,6 +500,13 @@ sv: {
 },
 
 no: {
+  "e.qr.t":"En Homecoon-etikett",
+  "e.qr.p":"Koden peker på et sted eller en gjenstand i et Homecoon-inventar. Innholdet ligger <strong>på eierens telefon</strong>: dette nettstedet kjenner det ikke og kan ikke vise det.",
+  "e.qr.b":"Åpne i Homecoon",
+  "e.qr.n":"Har du ikke appen?",
+  "e.404.t":"Fant ikke siden",
+  "e.404.p":"Denne adressen svarer ikke til noe på dette nettstedet.",
+  "e.404.b":"Til forsiden",
   "devband":"Under utvikling — siden viser en app som ennå ikke finnes",
   "hero.chemin":"📍 Garasje <span class='sep'>›</span> Sone B <span class='sep'>›</span> Hylle 2 <span class='sep'>›</span> Kasse B4 <span class='sep'>›</span> Eske «Festemidler»",
   "meta.title":"Homecoon — Finn alt hjemme",
@@ -515,6 +571,13 @@ no: {
 },
 
 fi: {
+  "e.qr.t":"Homecoon-tarra",
+  "e.qr.p":"Tämä koodi osoittaa paikkaan tai esineeseen Homecoon-inventaariossa. Sen sisältö on <strong>omistajan puhelimessa</strong>: tämä sivusto ei tunne sitä eikä voi näyttää sitä.",
+  "e.qr.b":"Avaa Homecoonissa",
+  "e.qr.n":"Eikö sinulla ole sovellusta?",
+  "e.404.t":"Sivua ei löytynyt",
+  "e.404.p":"Tämä osoite ei vastaa mitään tällä sivustolla.",
+  "e.404.b":"Takaisin etusivulle",
   "devband":"Kehitteillä — sivu esittelee sovellusta, jota ei vielä ole",
   "hero.chemin":"📍 Autotalli <span class='sep'>›</span> Alue B <span class='sep'>›</span> Hylly 2 <span class='sep'>›</span> Laatikko B4 <span class='sep'>›</span> Rasia ”Kiinnikkeet”",
   "meta.title":"Homecoon — Löydä kaikki kotoa",
