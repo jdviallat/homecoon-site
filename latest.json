@@ -1,7 +1,7 @@
 {
-  "version": "0.11.0",
+  "version": "0.12.0",
   "url": "https://github.com/jdviallat/homecoon/releases/latest",
-  "notes": "Première ouverture guidée, étiquettes libres, marqueurs de photo numérotés, gestion des photos, assistance par IA facultative. Version de développement : l'application n'est pas encore publiée sur les stores.",
+  "notes": "Planches d'étiquettes vierges (24, 48, 96) : on colle d'abord, on rattache après. Scanner une étiquette la rattache à un objet ou à un lieu — même un code-barres. Un QR imprimé se scanne aussi avec l'appareil photo du téléphone.",
   "obligatoire": false,
   "minVersion": "0.1.0"
 }
