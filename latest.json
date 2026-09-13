@@ -1,7 +1,7 @@
 {
-  "version": "0.12.0",
+  "version": "0.12.1",
   "url": "https://github.com/jdviallat/homecoon/releases/latest",
-  "notes": "Planches d'étiquettes vierges (24, 48, 96) : on colle d'abord, on rattache après. Scanner une étiquette la rattache à un objet ou à un lieu — même un code-barres. Un QR imprimé se scanne aussi avec l'appareil photo du téléphone.",
+  "notes": "L'application vérifie s'il existe une nouvelle version — au plus une fois par jour, et « plus tard » est respecté. Un bouton « Vérifier les mises à jour » dans les Réglages.",
   "obligatoire": false,
   "minVersion": "0.1.0"
 }
