@@ -1,7 +1,7 @@
 {
-  "version": "0.12.1",
+  "version": "0.13.0",
   "url": "https://github.com/jdviallat/homecoon/releases/latest",
-  "notes": "L'application vérifie s'il existe une nouvelle version — au plus une fois par jour, et « plus tard » est respecté. Un bouton « Vérifier les mises à jour » dans les Réglages.",
+  "notes": "Rappels : ce qui périme (la veille), un prêt à récupérer (la veille du retour), une garantie qui expire (30 j, 7 j, la veille), le sac de croquettes qui se vide (3 j avant). Une notification par jour et par sujet, vers 9 h — jamais dix. La toucher ouvre le bon écran.",
   "obligatoire": false,
   "minVersion": "0.1.0"
 }
