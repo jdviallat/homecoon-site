@@ -1,7 +1,7 @@
 {
-  "version": "0.13.0",
+  "version": "0.14.0",
   "url": "https://github.com/jdviallat/homecoon/releases/latest",
-  "notes": "Rappels : ce qui périme (la veille), un prêt à récupérer (la veille du retour), une garantie qui expire (30 j, 7 j, la veille), le sac de croquettes qui se vide (3 j avant). Une notification par jour et par sujet, vers 9 h — jamais dix. La toucher ouvre le bon écran.",
+  "notes": "Corbeille : ce que vous supprimez y reste trente jours — un lieu revient avec ce qui est parti avec lui — puis disparaît pour de bon. Courses : un rappel le samedi matin quand la liste n'est pas vide — jamais un par article.",
   "obligatoire": false,
   "minVersion": "0.1.0"
 }
