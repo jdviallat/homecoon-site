@@ -1,7 +1,7 @@
 {
-  "version": "0.15.0",
+  "version": "0.15.1",
   "url": "https://github.com/jdviallat/homecoon/releases/latest",
-  "notes": "Fiche depuis une photo : photographiez ou importez l'objet, son emballage, son étiquette ou son QR — codes, texte et base produit remplissent la fiche, l'IA de vision aussi si vous l'avez allumée. Vous vérifiez avant d'enregistrer, la photo devient la couverture.",
+  "notes": "Rien de nouveau à l'écran sur Android : cette version sert à vérifier que la mise à jour automatique vous parvient — si vous lisez ceci, c'est qu'elle marche. Préparation de la version iPhone : première compilation iOS, captures App Store ; sur iPhone, c'est l'App Store qui mettra à jour, pas un fichier à télécharger.",
   "obligatoire": false,
   "minVersion": "0.1.0"
 }
