@@ -1,6 +1,6 @@
 {
   "version": "0.16.0",
-  "url": "https://github.com/jdviallat/homecoon/releases/latest",
+  "url": "https://github.com/jdviallat/homecoon/releases/download/v0.16.0/Homecoon-0.16.0.apk",
   "notes": "Code à 6 chiffres (et empreinte ou visage) à l'ouverture, avec un délai réglable — il protège l'écran, pas le fichier. Photos recadrées sur proposition : Homecoon repère l'objet et resserre autour, sans imposer de carré ; vous gardez le dernier mot. La vignette d'une photo s'ouvre maintenant en grand.",
   "obligatoire": false,
   "minVersion": "0.1.0"
