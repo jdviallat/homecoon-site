@@ -1,7 +1,7 @@
 {
-  "version": "0.15.1",
+  "version": "0.16.0",
   "url": "https://github.com/jdviallat/homecoon/releases/latest",
-  "notes": "Rien de nouveau à l'écran sur Android : cette version sert à vérifier que la mise à jour automatique vous parvient — si vous lisez ceci, c'est qu'elle marche. Préparation de la version iPhone : première compilation iOS, captures App Store ; sur iPhone, c'est l'App Store qui mettra à jour, pas un fichier à télécharger.",
+  "notes": "Code à 6 chiffres (et empreinte ou visage) à l'ouverture, avec un délai réglable — il protège l'écran, pas le fichier. Photos recadrées sur proposition : Homecoon repère l'objet et resserre autour, sans imposer de carré ; vous gardez le dernier mot. La vignette d'une photo s'ouvre maintenant en grand.",
   "obligatoire": false,
   "minVersion": "0.1.0"
 }
