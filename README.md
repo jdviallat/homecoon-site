@@ -29,4 +29,4 @@ disponible tant que ça ne l'est pas.
 Le code de l'application vit dans un dépôt privé séparé (`homecoon-app`).
 
 ---
-*par Bengacoon — jdviallat@gmail.com*
+*par Bengacoon — info@bengacoon.com*
