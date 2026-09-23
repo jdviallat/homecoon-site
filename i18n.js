@@ -3,6 +3,12 @@
 var DICT = {
 
 fr: {
+  "gal.t":"L'application en images",
+  "gal.c1":"Accueil",
+  "gal.c2":"Vos lieux",
+  "gal.c3":"Le garage",
+  "gal.c4":"La fiche d'un objet",
+  "gal.c5":"Le garde-manger",
   "e.qr.t":"Une étiquette Homecoon",
   "e.qr.p":"Ce code désigne un emplacement ou un objet dans un inventaire Homecoon. Son contenu est <strong>sur le téléphone de son propriétaire</strong> : ce site ne le connaît pas et ne peut pas l'afficher.",
   "e.qr.b":"Ouvrir dans Homecoon",
@@ -74,6 +80,12 @@ fr: {
 },
 
 en: {
+  "gal.t":"The app in pictures",
+  "gal.c1":"Home",
+  "gal.c2":"Your places",
+  "gal.c3":"The garage",
+  "gal.c4":"An item sheet",
+  "gal.c5":"The pantry",
   "e.qr.t":"A Homecoon label",
   "e.qr.p":"This code points to a place or an item in a Homecoon inventory. Its contents live <strong>on its owner's phone</strong>: this website does not know them and cannot show them.",
   "e.qr.b":"Open in Homecoon",
@@ -145,6 +157,12 @@ en: {
 },
 
 de: {
+  "gal.t":"Die App in Bildern",
+  "gal.c1":"Start",
+  "gal.c2":"Ihre Orte",
+  "gal.c3":"Die Garage",
+  "gal.c4":"Ein Datenblatt",
+  "gal.c5":"Die Speisekammer",
   "e.qr.t":"Ein Homecoon-Etikett",
   "e.qr.p":"Dieser Code verweist auf einen Ort oder ein Objekt in einem Homecoon-Inventar. Sein Inhalt liegt <strong>auf dem Telefon des Besitzers</strong>: Diese Website kennt ihn nicht und kann ihn nicht anzeigen.",
   "e.qr.b":"In Homecoon öffnen",
@@ -216,6 +234,12 @@ de: {
 },
 
 it: {
+  "gal.t":"L'app in immagini",
+  "gal.c1":"Home",
+  "gal.c2":"I vostri luoghi",
+  "gal.c3":"Il garage",
+  "gal.c4":"La scheda di un oggetto",
+  "gal.c5":"La dispensa",
   "e.qr.t":"Un'etichetta Homecoon",
   "e.qr.p":"Questo codice indica un luogo o un oggetto in un inventario Homecoon. Il suo contenuto è <strong>sul telefono del proprietario</strong>: questo sito non lo conosce e non può mostrarlo.",
   "e.qr.b":"Apri in Homecoon",
@@ -287,6 +311,12 @@ it: {
 },
 
 pt: {
+  "gal.t":"A aplicação em imagens",
+  "gal.c1":"Início",
+  "gal.c2":"Os seus locais",
+  "gal.c3":"A garagem",
+  "gal.c4":"A ficha de um objeto",
+  "gal.c5":"A despensa",
   "e.qr.t":"Uma etiqueta Homecoon",
   "e.qr.p":"Este código indica um local ou um objeto num inventário Homecoon. O seu conteúdo está <strong>no telemóvel do proprietário</strong>: este site não o conhece e não o pode mostrar.",
   "e.qr.b":"Abrir no Homecoon",
@@ -358,6 +388,12 @@ pt: {
 },
 
 es: {
+  "gal.t":"La aplicación en imágenes",
+  "gal.c1":"Inicio",
+  "gal.c2":"Sus lugares",
+  "gal.c3":"El garaje",
+  "gal.c4":"La ficha de un objeto",
+  "gal.c5":"La despensa",
   "e.qr.t":"Una etiqueta Homecoon",
   "e.qr.p":"Este código señala un lugar o un objeto en un inventario Homecoon. Su contenido está <strong>en el teléfono de su propietario</strong>: este sitio no lo conoce y no puede mostrarlo.",
   "e.qr.b":"Abrir en Homecoon",
@@ -429,6 +465,12 @@ es: {
 },
 
 sv: {
+  "gal.t":"Appen i bilder",
+  "gal.c1":"Start",
+  "gal.c2":"Dina platser",
+  "gal.c3":"Garaget",
+  "gal.c4":"Ett föremålskort",
+  "gal.c5":"Skafferiet",
   "e.qr.t":"En Homecoon-etikett",
   "e.qr.p":"Koden pekar på en plats eller ett föremål i ett Homecoon-inventarium. Innehållet finns <strong>på ägarens telefon</strong>: den här webbplatsen känner inte till det och kan inte visa det.",
   "e.qr.b":"Öppna i Homecoon",
@@ -500,6 +542,12 @@ sv: {
 },
 
 no: {
+  "gal.t":"Appen i bilder",
+  "gal.c1":"Hjem",
+  "gal.c2":"Stedene dine",
+  "gal.c3":"Garasjen",
+  "gal.c4":"Et gjenstandskort",
+  "gal.c5":"Spiskammeret",
   "e.qr.t":"En Homecoon-etikett",
   "e.qr.p":"Koden peker på et sted eller en gjenstand i et Homecoon-inventar. Innholdet ligger <strong>på eierens telefon</strong>: dette nettstedet kjenner det ikke og kan ikke vise det.",
   "e.qr.b":"Åpne i Homecoon",
@@ -571,6 +619,12 @@ no: {
 },
 
 fi: {
+  "gal.t":"Sovellus kuvina",
+  "gal.c1":"Etusivu",
+  "gal.c2":"Paikkasi",
+  "gal.c3":"Autotalli",
+  "gal.c4":"Esineen kortti",
+  "gal.c5":"Ruokakomero",
   "e.qr.t":"Homecoon-tarra",
   "e.qr.p":"Tämä koodi osoittaa paikkaan tai esineeseen Homecoon-inventaariossa. Sen sisältö on <strong>omistajan puhelimessa</strong>: tämä sivusto ei tunne sitä eikä voi näyttää sitä.",
   "e.qr.b":"Avaa Homecoonissa",
